@@ -1,0 +1,27 @@
+<section class="bird-counting" id="comptage-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2 class="bird-counting-title">Comptage d'oiseaux</h2>
+          <p class="bird-counting-description">Le comptage d'oiseaux est une activité qui consiste à observer et à enregistrer le nombre et les espèces d'oiseaux dans une zone spécifique. C'est une pratique importante pour la recherche scientifique et la conservation des oiseaux. Vous pouvez participer en utilisant notre formulaire de comptage et en contribuant à la collecte de données.</p>
+        </div>
+
+
+        <div class="col-md-6">
+          <form class="bird-counting-form">
+            <div class="form-group position-relative">
+              <label for="bird-image">Sélectionnez une image d'oiseau :</label>
+              <div class="d-flex align-items-center">
+                <img [src]="imagePreview" alt="Aperçu de l'image" class="img-thumbnail img-fluid mx-auto mr-3 custom-image">
+                <input type="file" id="bird-image" class="form-control-file" (change)="previewImage($event)">
+              </div>
+            </div>
+            <!-- Autres champs du formulaire -->
+            <button type="submit" class="btn btn-primary btn-lg btn-color">Envoyer</button>
+          </form>          
+              
+        </div>
+      </div>
+    </div>
+  </section>
+  

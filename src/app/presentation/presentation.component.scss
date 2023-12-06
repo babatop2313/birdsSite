@@ -1,0 +1,50 @@
+.presentation {
+    padding: 80px 0;
+    background-color: rgba(244, 156, 99, 0.1);
+    color: #F49C63;
+    text-align: center;
+  }
+  
+  .presentation-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .presentation-description {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
+  .bird-images {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+  }
+  
+  .bird-image {
+    width: 120px;
+    height: 120px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+  }
+  
+  @media (max-width: 768px) {
+    .presentation {
+      padding: 40px 0;
+    }
+    
+    .presentation-title {
+      font-size: 24px;
+    }
+    
+    .bird-images {
+      flex-wrap: wrap;
+    }
+    
+    .bird-image {
+      margin-bottom: 20px;
+    }
+  }
+  

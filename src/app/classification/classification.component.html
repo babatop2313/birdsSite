@@ -1,0 +1,30 @@
+<section class="bird-counting" id="classification-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2 class="bird-counting-title">classification des oiseaux</h2>
+          <p class="bird-counting-description">
+            La classification des oiseaux est un processus fascinant qui permet de regrouper les différentes espèces
+          en fonction de leurs caractéristiques communes. Vous pouvez contribuer à cette tâche en utilisant notre
+          système de classification interactif.
+        </p>
+        </div>
+
+        <div class="col-md-6">
+          <form class="bird-counting-form">
+            <div class="form-group position-relative">
+              <label for="bird-image">Sélectionnez une image d'oiseau :</label>
+              <div class="d-flex align-items-center">
+                <img [src]="imagePreview" alt="Aperçu de l'image" class="img-thumbnail img-fluid mx-auto mr-3 custom-image">
+                <input type="file" id="bird-image" class="form-control-file" (change)="previewImage($event)">
+              </div>
+            </div>
+            <!-- Autres champs du formulaire -->
+            <button type="submit" class="btn btn-primary btn-lg btn-color">Envoyer</button>
+          </form>          
+              
+        </div>
+      </div>
+    </div>
+  </section>
+  

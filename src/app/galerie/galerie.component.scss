@@ -1,0 +1,46 @@
+.section-title {
+    font-size: 32px;
+    color: #F49C63;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .bird-card {
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .bird-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .bird-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .bird-details {
+    padding: 20px;
+    background-color: #fff;
+  }
+  
+  .bird-name {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .bird-info {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  @media (max-width: 767px) {
+    .bird-card {
+      margin-bottom: 20px;
+    }
+  }
+  
